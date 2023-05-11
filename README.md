@@ -16,3 +16,7 @@ You can install the development version of scGrabBag from [GitHub](https://githu
 # install.packages("devtools")
 devtools::install_github("odavalos/scGrabBag")
 ```
+
+##  TODO
+
+Include a static website containing examples of how to utilize the functions.
