@@ -7,7 +7,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' gene_percentage(seurat_obj, "Cd8b")
+#'}
 #'
 
 

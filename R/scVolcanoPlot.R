@@ -15,7 +15,9 @@
 #' @import ggrepel
 #'
 #' @examples
+#' \dontrun{
 #' scVolcanoPlot(DEWilcox)
+#' }
 #'
 
 

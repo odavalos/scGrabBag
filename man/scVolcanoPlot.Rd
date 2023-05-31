@@ -33,6 +33,8 @@ A volcanoplot of the differential expression data
 Function to create volcanoplot from Seurat scRNAseq differential expression data
 }
 \examples{
+\dontrun{
 scVolcanoPlot(DEWilcox)
+}
 
 }

@@ -37,9 +37,14 @@ grabbag_pal_list <- list(
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' grabbag_pal('ucm_pal', 2)
 #' grabbag_pal('ito_pal', 8)
 #' grabbag_pal('tol_muted', 10)
+#' }
+#'
+
+
 grabbag_pal <- function(pal_name, n){
   # make sure types are correct
   pal_name <- as.character(pal_name)

@@ -6,7 +6,10 @@
 #' @return Returns either the size of unique clusters generated or specific resolution with smallest unique cluster size
 #'
 #' @example
+#' \dontrun{
 #' getresolutionsizes(seurat_data, min_res=FALSE)
+#' }
+#'
 
 getresolutionsizes <- function(seurat_data, min_res = FALSE) {
   if (min_res == TRUE) {

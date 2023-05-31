@@ -14,11 +14,13 @@
 #' @import ggplot2
 #'
 #' @examples
+#' \dontrun{
 #' findPCs(seurat_object,
 #'         threshold_pct = 5,
 #'         threshold_cum_pct = 90,
 #'         threshold_diff_pct = 0.1,
 #'         elbow_plot=TRUE)
+#'}
 #'
 
 

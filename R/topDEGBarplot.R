@@ -13,7 +13,9 @@
 #' @import dplyr
 #'
 #' @examples
+#' \dontrun{
 #' topDEGBarplot(DEWilcox)
+#' }
 #'
 
 

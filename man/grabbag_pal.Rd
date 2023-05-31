@@ -21,7 +21,10 @@ Code generates custom length color palettes from a collection of color blind
 friendly palettes
 }
 \examples{
+\dontrun{
 grabbag_pal('ucm_pal', 2)
 grabbag_pal('ito_pal', 8)
 grabbag_pal('tol_muted', 10)
+}
+
 }

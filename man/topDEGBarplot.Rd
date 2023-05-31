@@ -24,6 +24,8 @@ This function will create a barplot
 of the top differentially expressed genes per cluster
 }
 \examples{
+\dontrun{
 topDEGBarplot(DEWilcox)
+}
 
 }

@@ -9,8 +9,9 @@
 #' @examples
 #'
 #' # do not add quotation marks around cluster_id
+#' \dontrun{
 #' runImmunePredictions(seurat_obj, seurat_cluster)
-#'
+#' }
 #'
 
 

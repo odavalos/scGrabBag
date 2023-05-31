@@ -30,10 +30,12 @@ Number of PCs to use for downstream analysis
 This function was adapted from https://hbctraining.github.io/scRNA-seq/lessons/elbow_plot_metric.html
 }
 \examples{
+\dontrun{
 findPCs(seurat_object,
         threshold_pct = 5,
         threshold_cum_pct = 90,
         threshold_diff_pct = 0.1,
         elbow_plot=TRUE)
+}
 
 }

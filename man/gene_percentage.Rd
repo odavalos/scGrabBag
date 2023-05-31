@@ -18,6 +18,8 @@ Percent of cells with gene expression > 0 and > median
 Calculate the percentage of cells expressing a gene with counts above the median
 }
 \examples{
+\dontrun{
 gene_percentage(seurat_obj, "Cd8b")
+}
 
 }
