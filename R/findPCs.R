@@ -105,9 +105,11 @@ findPCs <- function(seurat_object,
             legend.position = 'right',
             axis.text = element_text(color = 'black'),
             legend.text = element_text(color = 'black'))
+
+    print(eplot)
   }
 
-  print(eplot)
+
   return(pcs)
 
 }
