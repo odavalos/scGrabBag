@@ -2,8 +2,7 @@ Package: scGrabBag
 Title: Useful functions for single-cell projects
 Version: 0.0.0.9001
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Oscar", "Davalos", , "first.last@example.com", role = c("aut"))
 Description: This is my personal package. It contains some functions that I commonly use in single-cell projects.
 License: MIT + file LICENSE
 Encoding: UTF-8
