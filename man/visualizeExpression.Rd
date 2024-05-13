@@ -21,6 +21,3 @@ Multiple plots showing clustering, expression, and or kernel density estimates f
 \description{
 Generate multiple plots to visualize gene expression
 }
-\examples{
-
-}
