@@ -5,7 +5,13 @@
 \title{This function will create a barplot
 of the top differentially expressed genes per cluster}
 \usage{
-topDEGBarplot(dex_df, n_degs = 25, presto = FALSE, fc_line = 0.25)
+topDEGBarplot(
+  dex_df,
+  n_degs = 25,
+  presto = FALSE,
+  fc_line = 0.25,
+  title = paste0("Top ", n_degs, " DEGs")
+)
 }
 \arguments{
 \item{dex_df}{A dataframe of differentially expressed genes}

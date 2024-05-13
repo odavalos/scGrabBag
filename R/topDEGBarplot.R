@@ -19,7 +19,7 @@
 #'
 
 
-topDEGBarplot <- function(dex_df, n_degs = 25, presto=FALSE, fc_line=0.25){
+topDEGBarplot <- function(dex_df, n_degs = 25, presto=FALSE, fc_line=0.25, title=paste0("Top ", n_degs," DEGs")){
 
   # Check if the dataframe is from presto
   if(presto==TRUE){
@@ -52,10 +52,12 @@ topDEGBarplot <- function(dex_df, n_degs = 25, presto=FALSE, fc_line=0.25){
   bplot <-ggplot(topdegs,
                  aes(x = avg_log2FC,
                      y = tidytext::reorder_within(gene, avg_log2FC, cluster))) +
-    geom_bar(stat = "identity", fill = "grey50") +
+    geom_bar(stat = "identity", fill = "grey50", color = "white") +
     tidytext::scale_y_reordered() +
     facet_wrap(. ~ cluster, scales = "free_y") +
-    labs(title = "Gene expression by cluster", x = "Average log2FC", y = "") +
+    geom_vline(xintercept = c(0)) +
+    geom_vline(xintercept = c(fc_line), linetype = "dashed", linewidth = 1) +
+    labs(title = title, x = "Average log2FC", y = "") +
     theme_bw() +
     theme(axis.line = element_line(colour = "black"),
           strip.text = element_text(size = 10,
@@ -68,8 +70,7 @@ topDEGBarplot <- function(dex_df, n_degs = 25, presto=FALSE, fc_line=0.25){
                                     face = "bold",
                                     hjust = 0.5,
                                     vjust = 1),
-          plot.margin = unit(c(1,1,1,1), "cm")) +
-    geom_vline(xintercept = c(0, fc_line))
+          plot.margin = unit(c(1,1,1,1), "cm"))
 
   return(bplot)
 }
