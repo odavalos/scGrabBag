@@ -1,6 +1,6 @@
 Package: scGrabBag
 Title: Useful functions for single-cell projects
-Version: 0.0.0.9002
+Version: 0.0.0.9003
 Authors@R: 
      person("Oscar", "Davalos", , "first.last@example.com", role = c("aut", "cre"),
             comment = c(ORCID = "YOUR-ORCID-ID"))
