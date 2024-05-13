@@ -59,14 +59,12 @@ RunSoupX <- function(filtered_cellranger_counts_dir, raw_cellranger_counts_h5, o
 
   message("Loading raw data...\n")
   # load the raw droplet matrix
-  data_rawdrops <- Read10X_h5(filename = raw_cellranger_counts_h5)[["Gene Expression"]]
+  data_rawdrops <- Read10X_h5(filename = raw_cellranger_counts_h5)
 
 
   message("Loading filtered data...\n")
   # Load the data
   filt_data <- Read10X(data.dir = filtered_cellranger_counts_dir)
-  # Initialize the object for gene expression
-  filt_data <- filt_data$`Gene Expression`
 
   # Create the seurat object
   filt_seurat <- CreateSeuratObject(counts = filt_data,
