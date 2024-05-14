@@ -6,7 +6,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' prepAnalysisDir('sample1')
+#' }
 
 
 
