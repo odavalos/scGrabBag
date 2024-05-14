@@ -12,7 +12,7 @@ addCelltypeColorPal(srt_obj, celltypes)
 \item{celltypes}{character string of the column name in the metadata of the Seurat object that contains the celltype information}
 }
 \value{
-celltype_cols a named vector of colors
+srt_obj Seurat object with celltype_cols a vector of colors
 }
 \description{
 This function adds a color palette to the metadata of a Seurat object based on the celltype column.

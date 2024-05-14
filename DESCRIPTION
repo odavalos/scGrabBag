@@ -26,3 +26,6 @@ Imports:
     SoupX
 URL: https://github.com/odavalos/scGrabBag
 BugReports: https://github.com/odavalos/scGrabBag/issues
+Depends: 
+    R (>= 2.10)
+LazyData: true

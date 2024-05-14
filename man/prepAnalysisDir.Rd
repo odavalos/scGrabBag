@@ -16,5 +16,7 @@ A directory for the sample and subdirectories for plots, data, and results
 This function creates a directory for the sample and subdirectories for plots, data, and results.
 }
 \examples{
+\dontrun{
 prepAnalysisDir('sample1')
+}
 }
