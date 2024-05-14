@@ -24,7 +24,7 @@ Imports:
     rlang,
     Seurat,
     SoupX
-URL: https://github.com/odavalos/scGrabBag
+URL: https://github.com/odavalos/scGrabBag, https://odavalos.github.io/scGrabBag/
 BugReports: https://github.com/odavalos/scGrabBag/issues
 Depends: 
     R (>= 2.10)
