@@ -10,7 +10,7 @@
 #'
 #' @param srt_obj Seurat object
 #' @param celltypes character string of the column name in the metadata of the Seurat object that contains the celltype information
-#' @return celltype_cols a named vector of colors
+#' @return srt_obj Seurat object with celltype_cols a vector of colors
 #' @export
 #' @examples
 #' \dontrun{
@@ -65,14 +65,13 @@ addCelltypeColorPal <- function(srt_obj, celltypes){
   names(celltype_cols) <- sortedbysize
 
 
-  # TODO: Fix hard coding here.
   # colorpalette to metadata
-  srt_obj@meta.data$celltype_cols <- celltype_cols[match(srt_obj@meta.data$celltypes, names(celltype_cols))]
+  srt_obj@meta.data$celltype_cols <- celltype_cols[match(srt_obj@meta.data[,celltypes], names(celltype_cols))]
 
   # convert the celltypes column into a factor sorted by size to keep colors consistent
-  srt_obj@meta.data$celltypes <- factor(srt_obj@meta.data$celltypes,
-                                        levels = sortedbysize)
+  srt_obj@meta.data[,celltypes] <- factor(srt_obj@meta.data[,celltypes],
+                                          levels = sortedbysize)
 
-  return(celltype_cols)
+  return(srt_obj)
 
 }
