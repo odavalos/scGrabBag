@@ -34,7 +34,7 @@ plotLineage <- function(pt_lin, curves, add_lineage=FALSE){
     xlab("UMAP 1") +
     ylab("UMAP 2") +
     labs(fill = "pseudotime") +
-    scGrabBag::personal_theme(legend_pos = "right", legend_keytype= "fillbar")
+    scGrabBag::personalTheme(legend_pos = "right", legend_keytype= "fillbar")
 
   # TODO: Resolve the issue curves issue. Potentially issue with dataframes being different size or rownames
   # Add lineage paths if required
